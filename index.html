@@ -2,48 +2,61 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <!-- Style -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-nav">
+    <header class="header">
       <div class="container">
-        <a href="/">
-          <img src="./images/logotip.svg" alt="Логотим Beauty Zone" />
-        </a>
-        <nav>
-          <ul>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img src="./images/logotip.svg" alt="Логотим Beauty Zone" />
+            </a>
+            <ul class="header-menu">
+              <li class="header-item">
+                <a class="header-link" href="#information-section">Про нас</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#advantages-section">Чому ми</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-icon">
             <li>
-              <a class="header-link" href="#information-section">Про нас</a>
+              <a href="">acts</a>
             </li>
             <li>
-              <a class="header-link" href="#advantages-section">Чому ми</a>
+              <a href="">face</a>
             </li>
             <li>
-              <a class="header-link" href="#procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a class="header-link" href="#contacts-section">Контакти</a>
+              <a href="">inst</a>
             </li>
           </ul>
-          <!-- icon contacts, facebook, inst -->
-        </nav>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <p>Косметологічна клініка</p>
-          <h1 class="hero-title">beauty zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
-          <p class="hero-text">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+          <div class="hero-content">
+            <p class="hero-subtitle">Косметологічна клініка</p>
+            <h1 class="hero-title">beauty zone</h1>
+            <button class="button" type="button">Замовити дзвінок</button>
+            <p class="hero-description">
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
       </section>
       <section class="information-section" id="information-section">
