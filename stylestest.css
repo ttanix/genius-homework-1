@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f5f7fa;
   color: #333;
@@ -95,7 +95,22 @@ body {
   max-width: 50%;
 }
 
-.hero-subtitle {
+.hero-title {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-accent {
+  color: var(--color-brand-normal);
+  font-family: var(--font-title);
+  font-size: 140px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 0.8;
+}
+
+/* .hero-subtitle {
   font-size: 20px;
   color: #555;
 }
@@ -104,8 +119,7 @@ body {
   font-size: 64px;
   font-weight: bold;
   color: #007bff;
-  margin: 20px 0;
-}
+  margin: 20px 0; */
 
 .hero-description {
   margin: 20px 0;

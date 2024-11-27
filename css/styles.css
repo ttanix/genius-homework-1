@@ -1,53 +1,53 @@
 /* Play */
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: 'Play';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: 'Play';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
 }
 
 /* Roboko */
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v32-latin-regular.woff2") format("woff2");
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v32-latin-700.woff2") format("woff2");
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/roboto-v32-latin-900.woff2") format("woff2");
+  src: url('../fonts/roboto-v32-latin-900.woff2') format('woff2');
 }
 
 :root {
-  --color-primary: #2b7fff;
-  --color-primary-dark: #011c44;
-  --color-primary-light: #ffffff;
+  --color-brand-normal: #2b7fff;
+  --color-brand-dark: #011c44;
+  --color-brand-light: #ffffff;
   --color-text: #000;
-  --color-forms: #747272;
-  --color-secondary-forms: #4a4a4a;
-  --font-title-accent: "Play", sans-serif;
+  --color-secondary-light: #747272;
+  --color-secondary-dark: #4a4a4a;
+  --font-title: 'Play', sans-serif;
 }
 
 /* Base */
@@ -56,10 +56,10 @@
 }
 
 body {
-  color: var(--color-primary-dark);
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  color: var(--color-brand-dark);
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -98,28 +98,46 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1284px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Button */
 .button {
   padding: 16px 32px;
-  color: var(--color-primary-light);
   font-weight: 700;
   border-radius: 32px;
-  background-color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  color: var(--color-brand-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
   cursor: pointer;
 }
 
 .button:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-brand-dark);
   background-color: transparent;
 }
 
-.button .accent {
-  font-weight: 600;
+/* Link */
+.header-link {
+  color: var(--color-brand-dark);
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--color-brand-normal);
+}
+
+.footer-link {
+  color: var(--color-brand-light);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-normal);
 }
 
 /* Header */
@@ -138,50 +156,66 @@ ul {
 
 .header-menu {
   display: flex;
-  gap: 56px;
-  flex-grow: 1;
   justify-content: center;
-}
-
-.header-item {
-  margin-right: 56px;
+  flex-grow: 1;
+  gap: 56px;
 }
 
 .header-icon {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 1;
   gap: 32px;
-}
-
-.header-link {
-  color: var(--color-primary-dark);
-  text-align: center;
-  text-decoration: none;
-}
-
-.header-link:hover {
-  color: var(--color-primary);
 }
 
 /* Hero section */
 .hero-section {
-  padding: 124px 0 127px 0;
+  padding: 124px 0 269px 0;
 }
 
 .hero-title {
   margin-bottom: 40px;
-  color: var(--color-primary);
-  font-family: var(--font-title-accent);
+  color: var(--color-brand-normal);
+  font-family: var(--font-title);
   font-size: 140px;
   font-weight: 700;
+  max-width: 530px;
   line-height: 0.8;
   text-transform: capitalize;
-  text-align: left;
 }
 
-.hero-text {
+.hero-button {
+  margin-bottom: 14px;
+}
+
+.hero-description {
+  margin-bottom: 0;
+  color: var(--color-secondary-dark);
   font-size: 12px;
   line-height: 1.5;
+}
+
+/* Title section */
+.section-title {
+  font-family: var(--font-title);
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title .accent {
+  color: var(--color-brand-normal);
+}
+
+.accent-brand {
+  color: var(--color-brand-normal);
+  font-family: var(--font-title);
+  text-transform: capitalize;
+}
+
+.section-title.left {
+  text-align: left;
 }
 
 /* Information section */
@@ -189,14 +223,23 @@ ul {
   padding-bottom: 88px;
 }
 
-.information-title {
-  margin-bottom: 40px;
+.information-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.section-title-information {
-  font-size: 64px;
-  font-weight: 700;
-  text-align: left;
+.information-content {
+  max-width: 710px;
+}
+
+.information-photo {
+  max-width: 500px;
+}
+
+.information-title {
+  margin-bottom: 40px;
+  max-width: 530px;
 }
 
 .information-text {
@@ -204,36 +247,14 @@ ul {
   line-height: 1.7;
 }
 
-.information-text span {
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-/* Title section */
-.section-title {
-  font-size: 64px;
+.information-text .brand {
   font-weight: 700;
-  text-align: center;
-}
-
-.section-title .accent {
-  color: var(--color-primary);
-  font-family: var(--font-title-accent);
-}
-
-.accent-brand {
-  color: var(--color-primary);
-  font-family: var(--font-title-accent);
   text-transform: capitalize;
 }
 
 /* Advantages section */
 .advantages-section {
-  padding: 88px 0 48px 0;
-}
-
-.advantages-title {
-  margin-bottom: 48px;
+  padding-top: 88px;
 }
 
 .advantages-item {
@@ -243,33 +264,50 @@ ul {
 }
 
 /* Procedures section */
-.procedures-title {
-  margin-bottom: 48px;
+.procedures-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32) / 3);
+}
+
+.procedure-card {
+  padding: 0 77px 32px 77px;
+  border: 1px solid gray; /*REMOVE*/
+  border-radius: 120px 4px;
 }
 
 .procedure-title {
-  color: var(--color-primary-light);
+  color: var(--color-brand-light);
   font-size: 22px;
   line-height: 1.2;
-  text-align: center;
 }
 
 /* Contact section */
 .contacts-title {
-  margin-bottom: 48px;
+  color: var(--color-brand-light);
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.accent-menu {
+  color: var(--color-brand-normal);
+}
+
+.contact-text {
+  color: var(--color-secondary-light);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* Footer */
-.footer-link {
-  color: var(--color-primary-light);
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: var(--color-primary);
-}
-
 .address-copyright {
+  color: var(--color-secondary-light);
   font-size: 13px;
 }
