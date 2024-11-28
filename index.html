@@ -92,8 +92,9 @@
                 молодість. З нами краса назавжди!
               </p>
             </div>
-            <div class="information-photo">
+            <div class="information-media">
               <img
+                class="info-photo"
                 src="./images/woman-before.jpg"
                 alt="Обличчя жінки до процедури"
               />
@@ -107,6 +108,7 @@
                 <use href="./images/icon.svg#icon-medium-star"></use>
               </svg>
               <img
+                class="info-photo"
                 src="./images/woman-after.jpg"
                 alt="Обличчя жінки після процедури"
               />
@@ -114,43 +116,45 @@
           </div>
         </div>
       </section>
-      <section class="advantages-section section" id="advantages-section">
+      <section class="advantages-section" id="advantages-section">
         <div class="container">
-          <h2 class="section-title">
-            Чому люди <span class="accent">обирають нас</span>
-          </h2>
-          <ul>
-            <li>
-              <h3 class="visualy-hidden">Освіта</h3>
-              <svg width="32" height="32">
-                <use href="./images/icon.svg#icon-materials-science"></use>
-              </svg>
-              <p class="advantages-item">
-                Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                від 5 років
-              </p>
-            </li>
-            <li>
-              <h3 class="visualy-hidden">Досвід</h3>
-              <svg width="32" height="32">
-                <use href="./images/icon.svg#icon-cosmetics-bottle"></use>
-              </svg>
-              <p class="advantages-item">
-                Використовуємо тільки професійне обладнання та косметику,
-                перевірену часом
-              </p>
-            </li>
-            <li>
-              <h3 class="visualy-hidden">Мета</h3>
-              <svg width="32" height="32">
-                <use href="./images/icon.svg#icon-crown"></use>
-              </svg>
-              <p class="advantages-item">
-                Наша мета - підкреслити переваги та приховати недоліки, а не
-                переробити
-              </p>
-            </li>
-          </ul>
+          <div class="advantages-container">
+            <h2 class="advantages-title section-title">
+              Чому люди <span class="accent">обирають нас</span>
+            </h2>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <h3 class="visualy-hidden">Освіта</h3>
+                <svg width="32" height="32">
+                  <use href="./images/icon.svg#icon-materials-science"></use>
+                </svg>
+                <p class="advantages-text">
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="visualy-hidden">Досвід</h3>
+                <svg width="32" height="32">
+                  <use href="./images/icon.svg#icon-cosmetics-bottle"></use>
+                </svg>
+                <p class="advantages-text">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="visualy-hidden">Мета</h3>
+                <svg width="32" height="32">
+                  <use href="./images/icon.svg#icon-crown"></use>
+                </svg>
+                <p class="advantages-text">
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section" id="procedures-section">
@@ -215,7 +219,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="#">
