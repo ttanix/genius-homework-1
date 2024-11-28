@@ -73,6 +73,10 @@ p {
   margin-top: 0;
 }
 
+a {
+  display: inline-block;
+}
+
 address {
   font-style: normal;
 }
@@ -98,7 +102,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1284px;
+  max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -243,11 +247,19 @@ ul {
 }
 
 .information-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
   max-width: 500px;
 }
 
 .info-photo {
-  border-radius: 327px;
+  border-radius: 50%;
+  width: 335px;
+  height: 328px;
 }
 
 .information-title {
@@ -256,8 +268,13 @@ ul {
 }
 
 .information-text {
+  margin-bottom: 40px;
   font-size: 22px;
   line-height: 1.7;
+}
+
+.information-text:last-child {
+  margin-bottom: 0;
 }
 
 .information-text .brand {
@@ -308,11 +325,17 @@ ul {
 }
 
 /* Procedures section */
-.procedures-list {
+.procedures-container {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  align-items: center;
+  gap: 32px;
+}
+
+.procedures-list {
+  display: flex;
   flex-wrap: wrap;
+  gap: 40px 16px;
 }
 
 .procedures-item {
@@ -321,8 +344,8 @@ ul {
 
 .procedure-card {
   height: 456px;
-  padding: 0 77px 32px 77px;
-  border-radius: 120px 4px;
+  padding: 0 77px 32px 0;
+  border-radius: 4px 120px;
   background-image: linear-gradient(
     180deg,
     rgba(1, 28, 68, 0) 48.53%,
@@ -336,6 +359,7 @@ ul {
   color: var(--color-brand-light);
   font-size: 22px;
   line-height: 1.2;
+  text-align: center;
 }
 
 /* Carousel */
@@ -343,6 +367,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   background-color: var(--color-brand-light);
@@ -364,11 +389,26 @@ ul {
 }
 
 /* Contact section */
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
 .contacts-title {
   color: var(--color-brand-light);
   font-size: 22px;
   font-weight: 700;
   text-align: center;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
 }
 
 .accent-menu {
@@ -383,6 +423,33 @@ ul {
 }
 
 /* Footer */
+.footer {
+  padding: 56px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
 .footer-icon {
   fill: var(--color-brand-light);
 }
