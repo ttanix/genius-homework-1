@@ -285,6 +285,10 @@ ul {
 /* Advantages section */
 .advantages-section {
   padding: 88px 0 48px 0;
+  background-image: url('../images/advantages-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 .advantages-title {
@@ -303,8 +307,7 @@ ul {
   gap: 56px;
   height: 181px;
   align-items: center;
-
-  background: var(--color-brand-light);
+  background-image: var(--color-brand-light);
 }
 
 .advantages-item {
@@ -313,6 +316,7 @@ ul {
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
+  background-color: var(--color-brand-light);
   padding: 24px 32px;
   border-radius: 32px;
   box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
@@ -425,6 +429,23 @@ ul {
 /* Footer */
 .footer {
   padding: 56px 0;
+  position: relative;
+  background-image: url('../images/footer-background.png');
+  background-color: var(--color-brand-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::after {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url('../images/decor-cosmetic.png');
+  content: '';
 }
 
 .footer-container {
@@ -463,10 +484,36 @@ ul {
   font-size: 13px;
 }
 
-.footer {
-  background-image: url('../images/footer-background.png');
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(1, 31, 74, 0.4);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 720px;
+  height: 680px;
+  background-image: url(../images/modal-backgrount.png);
   background-color: var(--color-brand-dark);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
