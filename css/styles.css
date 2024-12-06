@@ -180,7 +180,7 @@ ul {
   flex-grow: 1;
   gap: 32px;
   fill: var(--color-brand-dark);
-  transform: color 0.2s;
+  transition: color 0.2s;
 }
 
 /* Hero section */
@@ -343,7 +343,7 @@ ul {
     star-rotation 3s infinite linear;
 }
 
-/* Анимация для звёзд */
+/* Анимация для зірок */
 @keyframes star-movement {
   0% {
     transform: translate(0, 0) scale(1);
@@ -401,7 +401,6 @@ ul {
   gap: 56px;
   height: 181px;
   align-items: center;
-  background-image: var(--color-brand-light);
 }
 
 .advantages-item {
@@ -441,15 +440,18 @@ ul {
 }
 
 .procedure-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 456px;
-  padding: 0 77px 32px 0;
+  padding: 0 50px 20px 88px;
   background-image: linear-gradient(
     180deg,
     rgba(1, 28, 68, 0) 48.53%,
     rgba(1, 28, 68, 0.73) 84.61%,
-    #011c44 101.39%
+    var(--color-brand-dark) 101.39%
   );
-  border: 1px solid gray; /*REMOVE*/
   border-radius: 4px 120px;
   transition: transform 0.2s;
 }
@@ -458,10 +460,20 @@ ul {
   transform: scale(1.05);
 }
 
+.procedure-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 120px;
+  z-index: -1;
+}
+
 .procedure-title {
   color: var(--color-brand-light);
-  background-color: gray; /*REMOVE*/
   font-size: 22px;
+  font-weight: normal;
   line-height: 1.2;
   text-align: center;
 }
@@ -586,7 +598,7 @@ ul {
 
 .footer-icon {
   fill: var(--color-brand-light);
-  transform: color 0.2s;
+  transition: color 0.2s;
 }
 
 .footer-icon:hover {

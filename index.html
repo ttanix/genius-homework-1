@@ -177,16 +177,31 @@
             <ul class="procedures-list">
               <li class="procedures-item">
                 <article class="procedure-card">
+                  <img
+                    class="procedure-image"
+                    src="./images/maska.jpg"
+                    alt="Жінці наносять маску на обличчя"
+                  />
                   <h3 class="procedure-title">Маски для обличчя</h3>
                 </article>
               </li>
               <li class="procedures-item">
                 <article class="procedure-card">
+                  <img
+                    class="procedure-image"
+                    src="./images/injection.jpg"
+                    alt="Жінці в обличчя роблять ін'єкцію"
+                  />
                   <h3 class="procedure-title">Ін'єкції для обличчя</h3>
                 </article>
               </li>
               <li class="procedures-item">
                 <article class="procedure-card">
+                  <img
+                    class="procedure-image"
+                    src="./images/cleaning.jpg"
+                    alt="Жінка після очищення обличчя спеціальним девайсом"
+                  />
                   <h3 class="procedure-title">Очищення обличчя</h3>
                 </article>
               </li>
@@ -212,7 +227,7 @@
                 width="600"
                 height="450"
                 style="border: 0"
-                allowfullscreen=""
+                allow="fullscreen"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -225,14 +240,17 @@
               </h3>
               <form name="contact-form" autocomplete="off">
                 <div class="contact-form-field">
-                  <label class="form-label visualy-hidden" for="full-user-name">
+                  <label
+                    class="form-label visualy-hidden"
+                    for="modal-full-user-name"
+                  >
                     Ваше ім'я та прізвище
                   </label>
                   <input
                     class="form-input"
                     type="text"
-                    id="full-user-name"
-                    name="full-user-name"
+                    id="modal-full-user-name"
+                    name="modal-full-user-name"
                     placeholder="Ваше ім'я та прізвище"
                     pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                     title="Введіть два слова, розділених пробілом, без цифр або спецсимволів"
@@ -241,14 +259,14 @@
                 </div>
 
                 <div class="contact-form-field">
-                  <label class="form-label visualy-hidden" for="user-tel">
+                  <label class="form-label visualy-hidden" for="modal-user-tel">
                     Ваш номер телефону
                   </label>
                   <input
                     class="form-input"
                     type="tel"
-                    id="user-tel"
-                    name="user-tel"
+                    id="modal-user-tel"
+                    name="modal-user-tel"
                     placeholder="Ваш номер телефону"
                     pattern="^\+380\d{9}$"
                     title="Номер має починатися з +380 і містити 9 цифр"
@@ -257,18 +275,21 @@
                 </div>
 
                 <div class="contact-form-field">
-                  <label class="form-label visualy-hidden" for="user-email">
+                  <label
+                    class="form-label visualy-hidden"
+                    for="modal-user-email"
+                  >
                     Ваша електронна пошта
                   </label>
                   <input
                     class="form-input"
                     type="email"
-                    id="user-email"
-                    name="user-email"
+                    id="modal-user-email"
+                    name="modal-user-email"
                     placeholder="Ваша електронна пошта"
+                    required
                   />
                 </div>
-
                 <button class="form-button button" type="submit">
                   Записатись безкоштовно
                 </button>
@@ -355,7 +376,7 @@
             </ul>
             <div class="address-info">
               <a class="footer-link" href="#" target="_blank">
-                Політика конфіденцшйності
+                Політика конфіденційності
               </a>
               <p class="address-copyright">&copy; 2022 Дані захищені</p>
             </div>
