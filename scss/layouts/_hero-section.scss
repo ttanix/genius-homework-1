@@ -1,0 +1,30 @@
+.hero-section {
+  padding: 124px 0 289px 0;
+  background-image: url('../images/hero-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__title {
+    margin-bottom: 40px;
+    color: var(--color-brand-normal);
+    font-family: var(--font-title);
+    font-size: 140px;
+    font-weight: 700;
+    max-width: 530px;
+    line-height: 0.8;
+    text-transform: capitalize;
+  }
+
+  &__button {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    margin-bottom: 0;
+    width: 238px;
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

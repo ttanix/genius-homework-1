@@ -1,0 +1,55 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    gap: 240px;
+    padding: 32px 0;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 56px;
+  }
+
+  &__link {
+    color: var(--color-brand-dark);
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-brand-normal);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 32px;
+    fill: var(--color-brand-dark);
+    transition: color 0.2s;
+
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.text-brand {
+  color: var(--color-brand-normal);
+  font-family: var(--font-title);
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}

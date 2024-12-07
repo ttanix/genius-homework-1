@@ -1,0 +1,38 @@
+.procedure-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 456px;
+  padding: 0 50px 20px 88px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    var(--color-brand-dark) 101.39%
+  );
+  border-radius: 4px 120px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 120px;
+    z-index: -1;
+  }
+
+  &__title {
+    color: var(--color-brand-light);
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
